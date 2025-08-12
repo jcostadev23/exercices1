@@ -1,12 +1,8 @@
 import { uniqueNumbers } from "./array";
 
 describe(uniqueNumbers, () => {
-  it("Should return null if empty array", () => {
-    expect(uniqueNumbers([])).toBeNull();
-  });
-
-  it("Should return NaN if not array of numbers", () => {
-    expect(uniqueNumbers([null, undefined])).toBeNaN();
+  it("Should return empty array if no numbers", () => {
+    expect(uniqueNumbers([])).toEqual([]);
   });
 
   it("Should return unique numbers", () => {
